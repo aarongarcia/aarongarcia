@@ -1,0 +1,23 @@
+[aria-current]:not([aria-current="false"]) {
+  text-decoration: underline;
+}
+
+body {
+	nav {
+		li {
+			a.active {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+nav {
+	a {
+
+		padding: 1rem 1rem;
+		background-color: $lightColor;
+		text-decoration: none;
+	}
+}

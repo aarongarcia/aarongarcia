@@ -1,0 +1,56 @@
+// Typography
+
+@include font-face("IBM_reg", "/assets/fonts/ibmplexmono-regular-webfont");
+@include font-face("IBM_reg_italic", "/assets/fonts/ibmplexmono-italic-webfont");
+
+@include font-face("IBM_bold", "/assets/fonts/ibmplexmono-bold-webfont");
+@include font-face("IBM_bold_italic", "/assets/fonts/ibmplexmono-bolditalic-webfont");
+
+$IBM_reg: "IBM_reg";
+$IBM_reg_italic: "IBM_reg_italic";
+$IBM_bold: "IBM_bold";
+$IBM_bold_italic: "IBM_bold_italic";
+
+$base-font-family: $IBM_reg;
+$heading-font-family: $IBM_bold;
+
+// Line height
+$base-line-height: 1.7;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// color palettes:
+
+
+
+$darkColor: #333;
+$medColor: #777;
+$lightColor: #ccc;
+
+
+
+// Font Colors
+$base-font-color: $darkColor;
+$action-color: $medColor;
+
+// Border
+$base-border-color: $darkColor;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: #fff;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 0;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: -3px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

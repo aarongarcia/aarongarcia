@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 5000px) {
+	section {
+		margin: 2% 24%;
+
+	}
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+
+
+@media screen and (max-width: 600px) {
+	section {
+		margin: 2% calc(8% + 2vw);
+	}
+	#skifree-canvas {
+	    scale: 1.4;
+	}
+
+}

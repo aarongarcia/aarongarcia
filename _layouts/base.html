@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.data.global.title }} </title>
+	{% include head.html %}
+</head>
+<body class="" id="{{ page.layout }}">
+	<main role="main">
+		{% include header.html %}
+		{{ content }}
+		{% include footer.html %}
+	</main>
+</body>
+<script src="{{ "assets/js/site_lateLoad.js" | relative_url }}"></script>
+</html>

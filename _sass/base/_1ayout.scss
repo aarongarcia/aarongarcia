@@ -1,0 +1,189 @@
+header {
+	img {
+		margin: 0 auto;
+		display: block;
+		padding: 2%;
+	}
+	h2 {
+		display: grid;
+	}
+}
+
+header.question {
+	display: grid;
+	grid-template-columns: .15fr 1.85fr;
+	grid-template-rows: 1fr;
+	gap: 0px 16px;
+	justify-items: stretch;
+	img {
+
+	}
+	h2 {
+		line-height: 1.6rem;
+	}
+}
+
+section.center {
+	text-align: center;
+	img.tree {
+		text-align: center;
+	}
+}
+
+footer {
+	position: relative;
+
+	.align_bottom {
+		position: absolute;
+		display: grid;
+  	grid-template-columns: 30% 40% 30%;
+
+	}
+	h4 { 
+		text-align: center;
+		display: block;
+	}
+	img {
+		padding: 20% 2% 2% 2%;
+		margin: 0 auto;
+		display: block;
+	}
+	a#ski {
+		display: none;
+	}
+	#countdown_1 {
+		display: none;
+	}
+	#countdown_2 {
+		display: none;
+	}
+	small {
+		display: block;
+	}
+	small.left {
+		text-align: left;
+		float: left;
+		margin-left: 5%;
+	}
+	small.right {
+		text-align: right;
+		float: right;
+		margin-right: 5%;
+
+	}
+	a {
+		float: left;
+		display: block;
+	}
+	small.center {
+		text-align: center;
+		margin: 0 auto;
+		width: auto;
+	}
+
+}
+
+section.border {
+
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.fullWidthImage {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+// accordion dropdown thing
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.dotless {
+	list-style: none;
+}
+
+.page-title {
+	margin: 2rem;
+	text-align: center;
+}
+
+.dropdown-container {
+	max-width: 800px;
+	min-width: 300px;
+	margin: 1rem auto;
+	overflow: hidden;
+}
+
+.dropdown-container {
+	img {
+		padding: 0;
+		margin: 15%;
+		vertical-align: middle;
+		display: inline;
+	}
+
+}
+
+.dropdown-container header {
+	cursor: pointer;
+	font-size: .8rem;
+	padding: 1rem;
+}
+
+.dropdown-container.open header {
+}
+
+.dropdown-container h2 {
+	float: left;
+	width: 100%;
+	text-decoration: underline;
+	font-family: $IBM_reg;
+}
+
+.dropdown-container .expand {
+	float: right;
+	transform: rotate(45deg);
+	font-size: 1.8em;
+	transition: transform 150ms ease-in-out;
+}
+
+.dropdown-container.open .expand{
+	transform: rotate(0);
+}
+
+
+.dropdown-container article {
+	background-image: url(/assets/img/background_pattern.svg);
+	max-height: 0px;
+	overflow: hidden;
+	line-height: 1.6; 
+	transition: max-height 150ms ease-in-out;
+	margin-left: 5rem;
+
+}
+
+
+/* padding can't be on article element because it won't collapse properly, add wrapper around contents */
+.dropdown-container .article-inner {
+	padding: 1rem;
+	p:last-of-type {
+		margin: 0;
+	}
+}
+
+

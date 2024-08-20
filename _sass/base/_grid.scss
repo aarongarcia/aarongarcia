@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+  background-color: $viewport-background-color;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+// main is around everything
+
+main {
+	max-width: 100%;
+	margin: 0 auto;
+
+}
+
+// section for each block of content
+section {
+	margin: 2% calc(8% + 2vw);
+
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+
+.wrapper {
+	width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
