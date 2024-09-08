@@ -18,10 +18,51 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+	border-radius: .4rem;
+
 }
 
 img.icon {
 	height:1.5rem;
 	width: auto;
 	
+}
+
+img.small {
+	height:2.5rem;
+	width: auto;
+}
+
+img.medium {
+	height:5rem;
+	width: auto;
+}
+
+img.75_dim {
+	opacity: 75%;
+}
+
+img.center_img {
+	display: block;
+	margin: 0 auto;
+}
+
+section.tile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 1fr;
+	gap: 16px;
+	justify-items: center;
+
+	
+}
+
+a.tile_link {
+	display: inline-flex;
+
+}
+
+a.tile_link:hover, a.tile_link:active {
+	filter: sepia(3);
+
 }

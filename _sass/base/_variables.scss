@@ -1,18 +1,18 @@
 // Typography
 
-@include font-face("IBM_reg", "/assets/fonts/ibmplexmono-regular-webfont");
-@include font-face("IBM_reg_italic", "/assets/fonts/ibmplexmono-italic-webfont");
+@include font-face("regular-font", "/assets/fonts/DIN-Next-Regular");
+@include font-face("regular-font_italic", "/assets/fonts/DIN-Next-Regular-it");
 
-@include font-face("IBM_bold", "/assets/fonts/ibmplexmono-bold-webfont");
-@include font-face("IBM_bold_italic", "/assets/fonts/ibmplexmono-bolditalic-webfont");
+@include font-face("bold-font", "/assets/fonts/DIN-Next-Bold");
+@include font-face("bold-font_italic", "/assets/fonts/DIN-Next-Bold-it");
 
-$IBM_reg: "IBM_reg";
-$IBM_reg_italic: "IBM_reg_italic";
-$IBM_bold: "IBM_bold";
-$IBM_bold_italic: "IBM_bold_italic";
+$regular-font: "regular-font";
+$regular-font_italic: "regular-font_italic";
+$bold-font: "bold-font";
+$bold-font_italic: "bold-font_italic";
 
-$base-font-family: $IBM_reg;
-$heading-font-family: $IBM_bold;
+$base-font-family: $regular-font;
+$heading-font-family: $bold-font;
 
 // Line height
 $base-line-height: 1.7;
@@ -27,10 +27,13 @@ $base-z-index: 0;
 // color palettes:
 
 
+$lightColor: #ccc; // light gray
+$darkColor: #333; // dark gray
 
-$darkColor: #333;
-$medColor: #777;
-$lightColor: #ccc;
+$medColor: #007e72; // dark green
+
+$headerColor: #e0d6bf; // light yellow
+$bodyColor: #8cd8d0; // turquoise
 
 
 
@@ -43,7 +46,7 @@ $base-border-color: $darkColor;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$viewport-background-color: #fff;
+$viewport-background-color: $bodyColor;
 
 // Focus
 $focus-outline-color: transparentize($action-color, 0.4);

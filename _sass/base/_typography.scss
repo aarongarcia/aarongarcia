@@ -9,7 +9,9 @@ img::selection,
 ul::selection,
 li::selection,
 a::selection,
-svg::selection {
+i::selection,
+svg::selection,
+small::selection {
   background-color: $lightColor;
 }
 
@@ -28,14 +30,39 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: modular-scale(1);
+  // font-size: modular-scale(1); not working????
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
+
+h1  {
+ font-size: 3.375em;
+}
+
+h2  {
+ font-size: 2.25em;
+}
+
+h3  {
+ font-size: 1.5em;
+}
+
+h4  {
+ font-size: 1em;
+}
+
+h5  {
+ font-size: 0.667em;
+}
+
+
 p {
   margin: 0 0 $small-spacing;
 }
+
+
+
 
 svg.outbound_link {
   position: relative;
@@ -57,10 +84,6 @@ a {
     outline: $focus-outline;
     outline-offset: $focus-outline-offset;
   }
-}
-
-small {
-
 }
 
 hr {
@@ -90,5 +113,5 @@ p.links {
 }
 
 strong {
-  font-family: $IBM_bold;
+  font-family: $bold-font;
 }

@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background-color: $headerColor;
 }
 
 html {
@@ -18,12 +19,20 @@ body {
 main {
 	max-width: 100%;
 	margin: 0 auto;
+	background-color: $bodyColor;
 
 }
 
 // section for each block of content
 section {
 	margin: 2% calc(8% + 2vw);
+	background-color: $bodyColor;
+
+}
+
+.aside {
+	background-color: #afefe8;
+	border-radius: .4rem;
 
 }
 
