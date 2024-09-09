@@ -59,7 +59,8 @@ section.tile {
 
 a.tile_link {
 	display: inline-flex;
-
+	border: 1px dashed #9e987e;
+	border-radius: .4rem;
 }
 
 a.tile_link:hover, a.tile_link:active {
