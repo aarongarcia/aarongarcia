@@ -1,15 +1,15 @@
 // Typography
 
-@include font-face("regular-font", "assets/fonts/DIN-Next-Regular");
-@include font-face("regular-font_italic", "assets/fonts/DIN-Next-Regular-it");
+@include font-face("DIN-Next-Regular", "assets/fonts/DIN-Next-Regular");
+@include font-face("DIN-Next-Regular-it", "assets/fonts/DIN-Next-Regular-it");
 
-@include font-face("bold-font", "assets/fonts/DIN-Next-Bold");
-@include font-face("bold-font_italic", "assets/fonts/DIN-Next-Bold-it");
+@include font-face("DIN-Next-Bold", "assets/fonts/DIN-Next-Bold");
+@include font-face("DIN-Next-Bold-it", "assets/fonts/DIN-Next-Bold-it");
 
-$regular-font: "regular-font";
-$regular-font_italic: "regular-font_italic";
-$bold-font: "bold-font";
-$bold-font_italic: "bold-font_italic";
+$regular-font: "DIN-Next-Regular";
+$regular-font_italic: "DIN-Next-Regular-it";
+$bold-font: "DIN-Next-Bold";
+$bold-font_italic: "DIN-Next-Bold-";
 
 $base-font-family: $regular-font;
 $heading-font-family: $bold-font;
